@@ -58,7 +58,7 @@ public class CarController : MonoBehaviour
         ApplyBraking();
     }
 
-    private void ApplyBraking()
+    public void ApplyBraking()
     {
         wheelColliders[(int)WheelType.FrontLeft].brakeTorque = currentBrackForce;
         wheelColliders[(int)WheelType.FrontRight].brakeTorque = currentBrackForce;
@@ -90,5 +90,15 @@ public class CarController : MonoBehaviour
         {
             UpdateSingleWheel(wheelColliders[i], wheelTransforms[i]);
         }
+    }
+
+    public void SlowMotorForce(float mul)
+    {
+        motorForce /= mul;
+    }
+
+    public void PaceUpMotorForce(float mul)
+    {
+        motorForce *= mul;
     }
 }
