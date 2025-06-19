@@ -36,10 +36,47 @@ OR
 - Week 2-3:
   - Get the demo track built for the test run
   - Implement a small script for the obstacles
+ 
+### Track layout
+ ![](Images/RaceTrack.png)
+
+### Red Obstacle
+ ![](Images/RedCone.png)
+
+### Speed Boost
+![](Images/SpeedBoost.png)
+
+ 
 - Week 4:
   - Continue to work on some small mechanics for the obstacle and boost
   - Add Cinemachine to the project and make the camera easier to deal with
+  - Add a timer and a stop to track how fast the player did
+
+### Mud piles
+![](Images/MudPile.png)
+
+### Following Cam and Timer
+![](Images/FollowCam.gif)
+
+### Time Stopper
+![](Images/TimerStop.gif)
+
+
 - Week 5-6:
-  - Adjust the car physics and make it roll less when turning
+  - Adjust the car physics and make it tilt less when turning
+  - Fix issue where the car will roll too much when going over a bump
   - Add more colliders to the car to prevent the wheel collider from getting stuck in the wall
   - Fix issue with the camera becoming blurry when tracking a fast-moving object
+ 
+### Car Components
+![](Images/CarComponent.png)
+
+
+## Final Result
+![](Images/FullRun.gif)
+
+## References
+- __Unity: Prevent Wheel Collider Slipping/Drifting_: [Youtube](https://www.youtube.com/watch?v=bUTZLCkZd04)
+- _How to make Car More Stable in Unity (Anti Roll bars) 2021_: [Youtube](https://www.youtube.com/watch?v=BwL3Dm8GJtQ)
+- _Unity3D How To: Driving With Wheel Colliders_: [Youtube](https://www.youtube.com/watch?v=j6_SMdWeGFI)
+- Cinemachine camera blur issue solution: [Unity Discussion](https://discussions.unity.com/t/unity-objects-blurring-when-camera-moves/154916) 
