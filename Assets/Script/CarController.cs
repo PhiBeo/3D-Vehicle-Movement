@@ -30,7 +30,7 @@ public class CarController : MonoBehaviour
     private float currentBrackForce;
     private bool isBraking;
 
-    private void Update()
+    private void FixedUpdate()
     {
         GetInput();
         HandleMotor();
@@ -50,9 +50,6 @@ public class CarController : MonoBehaviour
     {
         wheelColliders[(int)WheelType.FrontLeft].motorTorque = verticalInput * motorForce;
         wheelColliders[(int)WheelType.FrontRight].motorTorque = verticalInput * motorForce;
-
-        wheelColliders[(int)WheelType.BackRight].motorTorque = verticalInput * (motorForce / 5f);
-        wheelColliders[(int)WheelType.BackLeft].motorTorque = verticalInput * (motorForce / 5f);
 
         currentBrackForce = isBraking ? brakeForce : 0;
         ApplyBraking();
